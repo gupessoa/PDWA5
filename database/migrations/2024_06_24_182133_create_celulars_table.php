@@ -13,6 +13,11 @@ return new class extends Migration
     {
         Schema::create('celulars', function (Blueprint $table) {
             $table->id();
+            $table->string('marca', 20);
+            $table->string('Processador', 50);
+            $table->decimal('tamanho_tela');
+            $table->date('ano_lancamento');
+            $table->string('modelo');
             $table->timestamps();
         });
     }
